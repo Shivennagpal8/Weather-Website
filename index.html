@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" href="Weather.avif">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-bar">
+        
+          <a href="#" class="logo" ><img src="./weather-icon.webp" alt="" height="50px" width="50px">WeatherApp</a>
+
+          <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./Aboutus.html">About us</a></li>
+              <li><a href="./Feedback.html">Feedback</a></li>
+          </ul>
+
+          <a href="login.html"><button class="login-btn" type="">Login</button></a>
+
+          <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </div>
+  </nav>    
+  </header>
+
+  <div class="container">
+    <div class="weather-side">
+      <div class="weather-gradient"></div>
+      <div class="date-container">
+        <h2 class="date-dayname">Monday</h2><span class="date-day">30 Sep 2024</span><i class="location-icon"
+          data-feather="map-pin"></i><span class="location">Punjab,India</span>
+      </div>
+      <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+        <h1 class="weather-temp">29°C</h1>
+        <h3 class="weather-desc">Sunny</h3>
+      </div>
+    </div>
+    <div class="info-side">
+      <div class="today-info-container">
+        <div class="today-info">
+          <div class="precipitation"> <span class="title">PRECIPITATION</span><span class="value">0 %</span>
+            <div class="clear"></div>
+          </div>
+          <div class="humidity"> <span class="title">HUMIDITY</span><span class="value">34 %</span>
+            <div class="clear"></div>
+          </div>
+          <div class="wind"><span class="title">WIND</span><span class="value">5 km/h</span>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="week-container">
+        <ul class="week-list">
+          <li ><i class="day-icon" data-feather="sun"></i><span class="day-name">Mon</span><span
+              class="day-temp"></span></li>
+          <li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Tue</span><span
+              class="day-temp"></span></li>
+          <li class="active"><i class="day-icon" data-feather="cloud"></i><span class="day-name">Wed</span><span///
+              class="day-temp"></span></li>
+          <li><i class="day-icon" data-feather="cloud-snow"></i><span class="day-name">Thu</span><span
+              class="day-temp"></span></li>
+          <li><i class="day-icon" data-feather="cloud-rain"></i><span class="day-name">Fri</span><span
+              class="day-temp"></span></li>
+
+          <div class="clear"></div>
+        </ul>
+      </div>
+      <div class="location-container">
+        
+        <div class="search_box"></div>
+        <input type="text" id="box" >
+        
+      </div>
+    </div>
+  </div>
+  <img src="" alt="">
+
+
+<script>
+    // Replace feather icons
+    feather.replace();
+</script>
+
+</body>
+</html>

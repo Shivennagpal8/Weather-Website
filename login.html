@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form in HTML and CSS</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login_form">
+    <!-- Login form container -->
+    <form action="#">
+      <h3>LOGIN<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK9pIsCYx9Z9wPHyN-qDcqJMUALTYV0phaxw&s" width="70"></h3>
+
+      <div class="login_option">
+        <!-- Google button -->
+        <div class="option">
+          <a href="#">
+            <img src="https://www.gstatic.com/images/branding/product/1x/gsa_64dp.png" alt="Google Logo">
+            Google
+          </a>
+        </div>
+
+        <!-- Apple button -->
+        <div class="option">
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+            Apple
+          </a>
+        </div>
+      </div>
+
+      <!-- Login option separator -->
+      <p class="separator">
+        <span>or</span>
+      </p>
+
+      <!-- Email input box -->
+      <div class="input_box">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email address" required />
+      </div>
+
+      <!-- Password input box -->
+      <div class="input_box">
+        <div class="password_title">
+          <label for="password">Password</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <input type="password" id="password" placeholder="Enter your password" required/>
+      </div>
+
+      <!-- Login button -->
+      <button type="submit"><a href="./index.html" id="log_in">Log In</a></button>
+
+      <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+  <script>
+    const a=document.getElementById("log_in")
+    a.addEventListener(event="click",function(){alert("Log In succsessful")} )
+  </script>
+</body>
+</html>
